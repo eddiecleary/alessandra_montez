@@ -14,19 +14,19 @@ const gulp = require("gulp"),
 const paths = {
   styles: {
     src: "./src/scss/**/*.scss",
-    dest: "./assets/css/",
+    dest: "./dist/css/",
   },
   scripts: {
     src: "./src/js/*.js",
-    dest: "./assets/js/",
+    dest: "./dist/js/",
   },
   icons: {
     src: "./src/icons/*.svg",
-    dest: "./assets/images/"
+    dest: "./dist/images/"
   },
   images: {
     src: "./src/images/ready/*",
-    dest: "./assets/images/",
+    dest: "./dist/images/",
   },
 };
 
@@ -101,10 +101,12 @@ function watchTask() {
   gulp.watch('./*.html', reload);
 }
 
-const watch = gulp.parallel([watchTask, reload]);
+const dev = gulp.parallel([watchTask, reload]);
+const build = gulp.series([images, icons, styles, scripts]);
 
 exports.images = images;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.icons = icons;
-exports.default = watch;
+exports.build = build;
+exports.default = dev;
