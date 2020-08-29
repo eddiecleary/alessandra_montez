@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+html {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+body {
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Indie Flower', cursive;
+  line-height: 1.275;
+}
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.55; // desktop
+
+h1, .h1 {  
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+  @include tshadow;
+}
+
+h2, .h2 {  
+  font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+h3, .h3 { 
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+h4, .h4 {
+  font-size: $mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2 *$min_font);
+}
+
+h5, .h5 {
+  font-size: $mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2 *$min_font);
+}
+
+h6, .h6 {
+  font-size: $mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2 *$min_font);
+}
+
+
+// h1 {
+//   font-size: 2.25em;
+//   @include tshadow;
+// }
+
+// h2 {
+//   font-size: 1.9em;
+// }
+
+// h3 {
+//   font-size: 1.6em;
+// }
+
+// h4 {
+//   font-size: 1.35em;
+// }
+
+// h5 {
+//   font-size: 1.15em;
+// }
+
+// h6 {
+//   font-size: 1em;
+// }

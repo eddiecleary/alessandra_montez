@@ -1,0 +1,16 @@
+.btn {
+  padding: 0.7rem 2rem;
+  background-color: $primary;
+  border-radius: 30px;
+  display: inline-block;
+  @include border;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+
+  &-light {
+    background-color: $secondary;
+  }
+}
+
