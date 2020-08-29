@@ -98,7 +98,7 @@ function watchTask() {
   gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.icons.src, icons);
   gulp.watch(paths.images.src, images);
-  gulp.watch('./*.html', reload);
+  gulp.watch('./dist/*.html', reload);
 }
 
 const dev = gulp.parallel([watchTask, reload]);
