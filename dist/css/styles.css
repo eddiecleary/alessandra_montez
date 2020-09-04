@@ -1100,7 +1100,7 @@ section.contact .container form .wrap {
   position: relative;
   height: 300px;
   margin-top: 1.5em;
-  background-image: url("..//images/heart.svg");
+  background-image: url("./../images/heart.svg");
   background-size: 125px 125px;
   background-repeat: no-repeat;
   background-position: 50% 40%;
@@ -1125,7 +1125,7 @@ section.contact .container form .wrap textarea {
   border-radius: 25px;
   height: 100%;
   padding: 1em;
-  font-family: inheritz;
+  font-family: inherit;
   position: absolute;
   background-color: transparent;
   color: #333333;
