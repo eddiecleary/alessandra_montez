@@ -212,7 +212,7 @@ h6, .h6 {
 
 .return {
   padding: 15px;
-  background-color: #160079;
+  background-color: #2D3033;
   border-radius: 5px;
   z-index: 200;
   position: fixed;
@@ -221,13 +221,14 @@ h6, .h6 {
 }
 
 .return a {
-  color: #ffd700;
+  color: #18A0FB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .return a svg {
