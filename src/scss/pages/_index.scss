@@ -41,7 +41,7 @@ section.hero {
           text-align: left;
           flex-basis: 120%;
         }
-        
+
         h1 {
 
           @media (min-width: 992px) {
@@ -219,7 +219,7 @@ section.books {
           border-color: $white;
           max-width: 250px;
           width: 85%;
-  
+
           @media (min-width: 600px) {
             max-width: 290px;
           }
@@ -238,7 +238,7 @@ section.books {
 }
 
 section.about {
-  
+
   .container {
     max-width: 460px;
 
@@ -253,7 +253,7 @@ section.about {
       margin-top: 2em;
 
       img {
-        
+
       }
 
       img:last-of-type {
@@ -359,7 +359,7 @@ section.social {
           margin-top: 3em;
           position: relative;
           text-align: left;
-          
+
           label {
             position: absolute;
             top: 0;
@@ -417,11 +417,16 @@ section.contact {
       margin-top: 3em;
       position: relative;
       text-align: left;
-      
+
       label {
         position: absolute;
         top: 0;
         transform: translate(50%, -110%);
+
+        &.message {
+          opacity: 0;
+          visibility: hidden;
+        }
       }
 
       input {
