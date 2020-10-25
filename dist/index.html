@@ -198,7 +198,7 @@
             <p>A simple way for me to share news with my readers. I promise, no spam!</p>
             <form>
               <label for="email">Email:</label>
-              <input type="email" placeholder="youremail@here.com">
+              <input type="email" id="email" placeholder="youremail@here.com">
               <button type="submit">Join</button>
             </form>
           </div>
@@ -211,9 +211,10 @@
         <h5 class="h2">Send A Message</h5>
         <form>
           <label for="email2">Email:</label>
-          <input type="email" placeholder="youremail@here.com">
+          <input type="email" id="email2" placeholder="youremail@here.com">
           <div class="wrap">
-            <textarea name="message" placeholder="Send me a message!"></textarea>
+            <label for="message" hidden>Message:</label>
+            <textarea name="message" id="message" placeholder="Send me a message!"></textarea>
             <button type="submit">Send</button>
           </div>
         </form>
